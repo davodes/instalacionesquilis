@@ -5,21 +5,27 @@ import vercel from '@astrojs/vercel/static';
 
 export default defineConfig({
   site: 'https://instalacionesquilis.com',
-  integrations: [
-    tailwind(),
-    sitemap()
-  ],
   output: 'static',
-  adapter: vercel({
-    webAnalytics: { enabled: true }
-  }),
+  integrations: [
+    tailwind({
+      applyBaseStyles: false,
+    }),
+    sitemap({
+      changefreq: 'weekly',
+      priority: 0.7,
+      lastmod: new Date(),
+    }),
+  ],
+  adapter: vercel(),
   vite: {
     build: {
-      cssMinify: 'lightningcss'
+      cssMinify: true,
+      minify: 'esbuild',
+      rollupOptions: {
+        output: {
+          manualChunks: undefined,
+        }
+      }
     }
-  },
-  compressHTML: true,
-  build: {
-    inlineStylesheets: 'auto'
   }
 });
