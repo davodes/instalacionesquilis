@@ -1,0 +1,198 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Iluminación LED Madrid - Instalaciones Quilis"
+  description="Sistemas de iluminación LED profesionales en Madrid. Diseño lumínico, ahorro energético, domótica. Especialistas en eficiencia."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Iluminación"
+      subtitle="Soluciones LED innovadoras"
+      description="Diseño e instalación de sistemas de iluminación eficientes y estéticos"
+      backgroundImage="https://images.pexels.com/photos/1103970/pexels-photo-1103970.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+    />
+    
+    <!-- LED Benefits -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Ventajas de la tecnología LED
+          </h2>
+          <p class="text-xl text-secondary-600 max-w-3xl mx-auto">
+            La iluminación LED representa el futuro: más eficiente, duradera y versátil que cualquier otra tecnología
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-success-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-success-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-secondary-900 mb-2">80% menos consumo</h3>
+            <p class="text-secondary-600 text-sm">Reduce drásticamente tu factura eléctrica</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-secondary-900 mb-2">25 años de vida útil</h3>
+            <p class="text-secondary-600 text-sm">Durabilidad excepcional sin mantenimiento</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-accent-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-accent-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l2.09 6.26L20 10l-5 4.87 1.09 6.88L12 18.27 7.91 21.75 9 14.87 4 10l5.91-1.74L12 2z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-secondary-900 mb-2">Calidad de luz superior</h3>
+            <p class="text-secondary-600 text-sm">Colores naturales y confort visual</p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-warning-100 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-warning-600" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M17.66 8L12 2.35 6.34 8C4.78 9.56 4 11.64 4 13.64s.78 4.11 2.34 5.67 3.61 2.35 5.66 2.35 4.1-.79 5.66-2.35S20 15.64 20 13.64 19.22 9.56 17.66 8z"/>
+              </svg>
+            </div>
+            <h3 class="text-lg font-bold text-secondary-900 mb-2">Eco-friendly</h3>
+            <p class="text-secondary-600 text-sm">Sin mercurio ni radiación UV</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Solutions -->
+    <section class="py-16 lg:py-24 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Soluciones de iluminación
+          </h2>
+          <p class="text-xl text-secondary-600">
+            Adaptamos la luz a cada espacio y necesidad
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-8">
+          <!-- Residential -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-gradient-to-br from-primary-400 to-primary-600 flex items-center justify-center">
+              <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-secondary-900 mb-4">Residencial</h3>
+              <p class="text-secondary-600 mb-6">
+                Crea ambientes únicos en tu hogar con sistemas inteligentes y eficientes.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Downlights empotrados</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Tiras LED decorativas</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Control inteligente</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Regulación automática</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Commercial -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-gradient-to-br from-accent-400 to-accent-600 flex items-center justify-center">
+              <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 7V3H2v18h20V7H12zM6 19H4v-2h2v2zm0-4H4v-2h2v2zm0-4H4V9h2v2zm0-4H4V5h2v2zm4 12H8v-2h2v2zm0-4H8v-2h2v2zm0-4H8V9h2v2zm0-4H8V5h2v2zm10 12h-8v-2h2v-2h-2v-2h2v-2h-2V9h8v10zm-2-8h-2v2h2v-2zm0 4h-2v2h2v-2z"/>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-secondary-900 mb-4">Comercial</h3>
+              <p class="text-secondary-600 mb-6">
+                Mejora la productividad y atrae clientes con iluminación profesional.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+                  <span class="text-secondary-600">Paneles LED de oficina</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+                  <span class="text-secondary-600">Iluminación de escaparates</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+                  <span class="text-secondary-600">Sistemas de emergencia</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+                  <span class="text-secondary-600">Control horario</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          <!-- Industrial -->
+          <div class="bg-white rounded-2xl overflow-hidden shadow-lg group hover:shadow-2xl transition-shadow">
+            <div class="h-48 bg-gradient-to-br from-secondary-400 to-secondary-600 flex items-center justify-center">
+              <svg class="w-16 h-16 text-white" fill="currentColor" viewBox="0 0 24 24">
+                <path d="M12 2l-.5 2h-2L8 6.5V9h8V6.5L14.5 4h-2L12 2zm-4 7v9h8v-9H8z"/>
+              </svg>
+            </div>
+            <div class="p-8">
+              <h3 class="text-2xl font-bold text-secondary-900 mb-4">Industrial</h3>
+              <p class="text-secondary-600 mb-6">
+                Soluciones robustas para entornos exigentes con máxima eficiencia.
+              </p>
+              <ul class="space-y-2">
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-secondary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Campanas LED industriales</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-secondary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Iluminación de naves</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-secondary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Resistencia a ambientes</span>
+                </li>
+                <li class="flex items-center gap-2">
+                  <span class="w-2 h-2 bg-secondary-500 rounded-full"></span>
+                  <span class="text-secondary-600">Mantenimiento mínimo</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <ContactInfo />
+  </main>
+  
+  <Footer />
+</Layout>

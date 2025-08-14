@@ -1,0 +1,168 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Instalaciones Eléctricas Madrid - Instalaciones Quilis"
+  description="Instalaciones eléctricas profesionales en Madrid. Cuadros eléctricos, automatización, certificaciones. Electricistas autorizados."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Electricidad"
+      subtitle="Instalaciones eléctricas profesionales"
+      description="Cuadros eléctricos, automatización industrial y certificaciones oficiales"
+      backgroundImage="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+    />
+    
+    <!-- Services Detail -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <img
+              src="https://images.pexels.com/photos/442150/pexels-photo-442150.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Instalaciones eléctricas profesionales"
+              class="rounded-2xl shadow-2xl"
+              loading="lazy"
+            />
+          </div>
+          
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Instalaciones eléctricas de calidad
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6 leading-relaxed">
+              Realizamos todo tipo de instalaciones eléctricas para hogares, oficinas e industrias. Nuestros electricistas autorizados garantizan trabajos seguros y conformes a la normativa vigente.
+            </p>
+            
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+              <div class="bg-primary-50 p-6 rounded-xl">
+                <h4 class="font-bold text-primary-900 mb-2">Instalaciones nuevas</h4>
+                <p class="text-primary-700 text-sm">Proyectos completos desde cero</p>
+              </div>
+              
+              <div class="bg-primary-50 p-6 rounded-xl">
+                <h4 class="font-bold text-primary-900 mb-2">Reformas eléctricas</h4>
+                <p class="text-primary-700 text-sm">Modernización de instalaciones</p>
+              </div>
+              
+              <div class="bg-primary-50 p-6 rounded-xl">
+                <h4 class="font-bold text-primary-900 mb-2">Cuadros eléctricos</h4>
+                <p class="text-primary-700 text-sm">Diseño y montaje especializado</p>
+              </div>
+              
+              <div class="bg-primary-50 p-6 rounded-xl">
+                <h4 class="font-bold text-primary-900 mb-2">Automatización</h4>
+                <p class="text-primary-700 text-sm">Sistemas inteligentes y control</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Specialized Services -->
+    <section class="py-16 lg:py-24 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Servicios especializados
+          </h2>
+          <p class="text-xl text-secondary-600">
+            Soluciones eléctricas integrales para cada sector
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <!-- Industrial -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zM9 17H7v-7h2v7zm4 0h-2V7h2v10zm4 0h-2v-4h2v4z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-secondary-900">Sector Industrial</h3>
+            </div>
+            
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Cuadros de fuerza y control</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Sistemas de automatización</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Motores y variadores</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Mantenimiento correctivo</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Residential/Commercial -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-accent-500 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+                </svg>
+              </div>
+              <h3 class="text-2xl font-bold text-secondary-900">Residencial y Comercial</h3>
+            </div>
+            
+            <ul class="space-y-3">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Instalaciones domésticas</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Sistemas de seguridad</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Domótica y hogar inteligente</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-success-500 mt-0.5 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <span class="text-secondary-600">Certificaciones eléctricas</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <ContactInfo />
+  </main>
+  
+  <Footer />
+</Layout>

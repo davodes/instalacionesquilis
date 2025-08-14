@@ -1,0 +1,126 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import Services from '../components/Services.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Instalaciones Quilis - Climatización, Electricidad e Iluminación en Madrid"
+  description="Empresa líder en instalaciones de climatización, electricidad, iluminación y horticultura técnica en Madrid. Más de 35 años de experiencia. Presupuesto sin compromiso."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Instalaciones Quilis"
+      subtitle="Expertos desde 1985"
+      description="Especialistas en climatización, electricidad, iluminación y horticultura técnica. Soluciones profesionales para hogares y empresas en Madrid."
+    />
+    
+    <Services />
+    
+    <!-- About Section -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Más de 35 años de experiencia
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6 leading-relaxed">
+              Desde 1985, Instalaciones Quilis ha sido una empresa de referencia en el sector de las instalaciones técnicas en Madrid. Nuestro compromiso con la calidad, la innovación y la satisfacción del cliente nos ha convertido en líderes del mercado.
+            </p>
+            <p class="text-lg text-secondary-600 mb-8 leading-relaxed">
+              Ofrecemos soluciones integrales adaptadas a las necesidades específicas de cada cliente, utilizando las últimas tecnologías y los mejores materiales del mercado.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-6">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2">+1000</div>
+                <div class="text-secondary-600">Proyectos realizados</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-primary-600 mb-2">35+</div>
+                <div class="text-secondary-600">Años de experiencia</div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="relative">
+            <img
+              src="https://images.pexels.com/photos/8293778/pexels-photo-8293778.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Equipo de profesionales de Instalaciones Quilis"
+              class="rounded-2xl shadow-2xl"
+              loading="lazy"
+            />
+            <div class="absolute -bottom-6 -right-6 glass p-6 rounded-xl">
+              <div class="text-center">
+                <div class="text-2xl font-bold text-primary-600">100%</div>
+                <div class="text-sm text-secondary-700">Satisfacción</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Why Choose Us -->
+    <section class="py-16 lg:py-24 bg-primary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            ¿Por qué elegir Instalaciones Quilis?
+          </h2>
+          <p class="text-xl text-secondary-600">
+            La confianza de miles de clientes nos avala
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M6.267 3.455a3.066 3.066 0 001.745-.723 3.066 3.066 0 013.976 0 3.066 3.066 0 001.745.723 3.066 3.066 0 012.812 2.812c.051.643.304 1.254.723 1.745a3.066 3.066 0 010 3.976 3.066 3.066 0 00-.723 1.745 3.066 3.066 0 01-2.812 2.812 3.066 3.066 0 00-1.745.723 3.066 3.066 0 01-3.976 0 3.066 3.066 0 00-1.745-.723 3.066 3.066 0 01-2.812-2.812 3.066 3.066 0 00-.723-1.745 3.066 3.066 0 010-3.976 3.066 3.066 0 00.723-1.745 3.066 3.066 0 012.812-2.812zm7.44 5.252a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Calidad garantizada</h3>
+            <p class="text-secondary-600">
+              Utilizamos solo materiales de primera calidad y ofrecemos garantía en todos nuestros trabajos.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Servicio rápido</h3>
+            <p class="text-secondary-600">
+              Respuesta inmediata a tus necesidades. Servicio de urgencias 24/7 para emergencias.
+            </p>
+          </div>
+          
+          <div class="text-center">
+            <div class="w-16 h-16 bg-primary-600 rounded-full flex items-center justify-center mx-auto mb-4">
+              <svg class="w-8 h-8 text-white" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M11.49 3.17c-.38-1.56-2.6-1.56-2.98 0a1.532 1.532 0 01-2.286.948c-1.372-.836-2.942.734-2.106 2.106.54.886.061 2.042-.947 2.287-1.561.379-1.561 2.6 0 2.978a1.532 1.532 0 01.947 2.287c-.836 1.372.734 2.942 2.106 2.106a1.532 1.532 0 012.287.947c.379 1.561 2.6 1.561 2.978 0a1.533 1.533 0 012.287-.947c1.372.836 2.942-.734 2.106-2.106a1.533 1.533 0 01.947-2.287c1.561-.379 1.561-2.6 0-2.978a1.532 1.532 0 01-.947-2.287c.836-1.372-.734-2.942-2.106-2.106a1.532 1.532 0 01-2.287-.947zM10 13a3 3 0 100-6 3 3 0 000 6z" clip-rule="evenodd"/>
+              </svg>
+            </div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Profesionales certificados</h3>
+            <p class="text-secondary-600">
+              Nuestro equipo está formado por técnicos cualificados y certificados en cada especialidad.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <ContactInfo />
+  </main>
+  
+  <Footer />
+</Layout>

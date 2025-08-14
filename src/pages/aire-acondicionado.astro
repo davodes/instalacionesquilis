@@ -1,0 +1,152 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Aire Acondicionado Madrid - Instalaciones Quilis"
+  description="Instalación, mantenimiento y reparación de aire acondicionado en Madrid. Sistemas VRV/VRF, Split, Conductos. Presupuesto gratuito."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Aire Acondicionado"
+      subtitle="Climatización profesional"
+      description="Instalación, mantenimiento y reparación de sistemas de climatización para hogares y empresas"
+      backgroundImage="https://images.pexels.com/photos/6758773/pexels-photo-6758773.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+    />
+    
+    <!-- Services Detail -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Sistemas de climatización profesionales
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6 leading-relaxed">
+              Especialistas en la instalación, mantenimiento y reparación de sistemas de aire acondicionado para espacios residenciales, comerciales e industriales. Utilizamos las mejores marcas del mercado para garantizar el máximo confort y eficiencia energética.
+            </p>
+            
+            <div class="space-y-4">
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-success-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-secondary-900">Instalaciones profesionales</h4>
+                  <p class="text-secondary-600">Montaje especializado con garantía completa</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-success-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-secondary-900">Mantenimiento preventivo</h4>
+                  <p class="text-secondary-600">Contratos de mantenimiento personalizados</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-success-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-secondary-900">Reparación urgente</h4>
+                  <p class="text-secondary-600">Servicio técnico 24/7 para emergencias</p>
+                </div>
+              </div>
+              
+              <div class="flex items-start gap-3">
+                <svg class="w-6 h-6 text-success-500 mt-1 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd"/>
+                </svg>
+                <div>
+                  <h4 class="font-semibold text-secondary-900">Eficiencia energética</h4>
+                  <p class="text-secondary-600">Sistemas A+++ para máximo ahorro</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div>
+            <img
+              src="https://images.pexels.com/photos/6758773/pexels-photo-6758773.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Instalación de aire acondicionado"
+              class="rounded-2xl shadow-2xl"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Types of Systems -->
+    <section class="py-16 lg:py-24 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Tipos de sistemas
+          </h2>
+          <p class="text-xl text-secondary-600">
+            Soluciones adaptadas a cada necesidad
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl mb-4">❄️</div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Split Doméstico</h3>
+            <p class="text-secondary-600 mb-4">
+              Ideales para viviendas particulares. Instalación rápida y funcionamiento silencioso.
+            </p>
+            <ul class="text-sm text-secondary-500 space-y-1">
+              <li>• Bajo consumo energético</li>
+              <li>• Control por mando a distancia</li>
+              <li>• Función frío/calor</li>
+              <li>• Filtros purificadores</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl mb-4">🏢</div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Sistemas VRV/VRF</h3>
+            <p class="text-secondary-600 mb-4">
+              Para grandes superficies comerciales e industriales. Máxima eficiencia y control.
+            </p>
+            <ul class="text-sm text-secondary-500 space-y-1">
+              <li>• Control independiente por zonas</li>
+              <li>• Máxima eficiencia energética</li>
+              <li>• Mantenimiento simplificado</li>
+              <li>• Amplia gama de potencias</li>
+            </ul>
+          </div>
+          
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="text-4xl mb-4">🌬️</div>
+            <h3 class="text-xl font-bold text-secondary-900 mb-4">Por Conductos</h3>
+            <p class="text-secondary-600 mb-4">
+              Climatización integral oculta. Perfecto para oficinas y locales comerciales.
+            </p>
+            <ul class="text-sm text-secondary-500 space-y-1">
+              <li>• Instalación oculta</li>
+              <li>• Distribución homogénea</li>
+              <li>• Control centralizado</li>
+              <li>• Diseño estético</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <ContactInfo />
+  </main>
+  
+  <Footer />
+</Layout>

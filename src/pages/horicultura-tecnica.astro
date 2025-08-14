@@ -1,0 +1,237 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Hero from '../components/Hero.astro';
+import ContactInfo from '../components/ContactInfo.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Horticultura Técnica Madrid - Instalaciones Quilis"
+  description="Sistemas técnicos para horticultura en Madrid. Invernaderos, hidroponía, control climático, riego automatizado. Cultivos de precisión."
+>
+  <Header />
+  
+  <main>
+    <Hero 
+      title="Horticultura Técnica"
+      subtitle="Tecnología para el cultivo"
+      description="Sistemas avanzados para invernaderos, cultivos hidropónicos y agricultura de precisión"
+      backgroundImage="https://images.pexels.com/photos/1482101/pexels-photo-1482101.jpeg?auto=compress&cs=tinysrgb&w=1920&h=1080&fit=crop"
+    />
+    
+    <!-- Technology Overview -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div>
+            <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-6">
+              Agricultura del futuro
+            </h2>
+            <p class="text-lg text-secondary-600 mb-6 leading-relaxed">
+              Implementamos las tecnologías más avanzadas para maximizar la producción agrícola con el mínimo consumo de recursos. Nuestros sistemas automatizados proporcionan el control total del ambiente de cultivo.
+            </p>
+            
+            <div class="grid grid-cols-2 gap-6 mb-8">
+              <div class="text-center">
+                <div class="text-3xl font-bold text-success-600 mb-2">+40%</div>
+                <div class="text-secondary-600 text-sm">Mayor rendimiento</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-success-600 mb-2">-60%</div>
+                <div class="text-secondary-600 text-sm">Menos agua</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-success-600 mb-2">-30%</div>
+                <div class="text-secondary-600 text-sm">Menos fertilizantes</div>
+              </div>
+              <div class="text-center">
+                <div class="text-3xl font-bold text-success-600 mb-2">24/7</div>
+                <div class="text-secondary-600 text-sm">Monitoreo</div>
+              </div>
+            </div>
+            
+            <a 
+              href="/contacto" 
+              class="bg-success-500 hover:bg-success-600 text-white px-8 py-3 rounded-full font-semibold transition-colors inline-flex items-center gap-2"
+            >
+              Solicitar proyecto
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+              </svg>
+            </a>
+          </div>
+          
+          <div>
+            <img
+              src="https://images.pexels.com/photos/1482101/pexels-photo-1482101.jpeg?auto=compress&cs=tinysrgb&w=800"
+              alt="Invernadero con tecnología avanzada"
+              class="rounded-2xl shadow-2xl"
+              loading="lazy"
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Systems -->
+    <section class="py-16 lg:py-24 bg-success-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl lg:text-4xl font-bold text-secondary-900 mb-4">
+            Sistemas especializados
+          </h2>
+          <p class="text-xl text-secondary-600">
+            Tecnología integral para cada tipo de cultivo
+          </p>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+          <!-- Climate Control -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-primary-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 15l-5-5 1.41-1.41L10 14.17l7.59-7.59L19 8l-9 9z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-900">Control Climático</h3>
+            </div>
+            
+            <p class="text-secondary-600 mb-6">
+              Automatización completa del microclima para condiciones de crecimiento óptimas.
+            </p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                <span class="text-secondary-600">Temperatura y humedad</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                <span class="text-secondary-600">Ventilación automatizada</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                <span class="text-secondary-600">Calefacción y refrigeración</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-primary-500 rounded-full"></span>
+                <span class="text-secondary-600">Monitoreo en tiempo real</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Irrigation -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-blue-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12,3.77L11.25,4.61C11.25,4.61 9.97,6.06 8.68,7.94C7.39,9.82 6.25,12.07 6.25,14.2A5.75,5.75 0 0,0 12,20A5.75,5.75 0 0,0 17.75,14.2C17.75,12.07 16.61,9.82 15.32,7.94C14.03,6.06 12.75,4.61 12.75,4.61L12,3.77M12,6.9C12.44,7.42 12.84,7.85 13.68,9.07C14.89,10.83 15.75,12.33 15.75,14.2A3.75,3.75 0 0,1 12,18A3.75,3.75 0 0,1 8.25,14.2C8.25,12.33 9.11,10.83 10.32,9.07C11.16,7.85 11.56,7.42 12,6.9Z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-900">Riego Inteligente</h3>
+            </div>
+            
+            <p class="text-secondary-600 mb-6">
+              Sistemas de fertirrigación precisos que optimizan el consumo de agua y nutrientes.
+            </p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span class="text-secondary-600">Riego por goteo</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span class="text-secondary-600">Fertirrigación automática</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span class="text-secondary-600">Sensores de humedad</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-blue-500 rounded-full"></span>
+                <span class="text-secondary-600">Programación por zonas</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Hydroponics -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-success-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M17,8C8,10 5.9,16.17 3.82,21.34L5.71,22L6.66,19.7C7.14,19.87 7.64,20 8,20C19,20 22,3 22,3C21,5 14,5.25 9,6.25C4,7.25 2,11.5 2,13.5C2,15.5 3.75,17.25 3.75,17.25C7,8 17,8 17,8Z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-900">Hidroponía</h3>
+            </div>
+            
+            <p class="text-secondary-600 mb-6">
+              Cultivos sin suelo con máximo control nutricional y crecimiento acelerado.
+            </p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-success-500 rounded-full"></span>
+                <span class="text-secondary-600">Sistemas NFT</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-success-500 rounded-full"></span>
+                <span class="text-secondary-600">Cultivo en sustrato</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-success-500 rounded-full"></span>
+                <span class="text-secondary-600">Control de pH y EC</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-success-500 rounded-full"></span>
+                <span class="text-secondary-600">Soluciones nutritivas</span>
+              </li>
+            </ul>
+          </div>
+          
+          <!-- Lighting -->
+          <div class="bg-white rounded-2xl p-8 shadow-lg">
+            <div class="flex items-center mb-6">
+              <div class="w-12 h-12 bg-warning-600 rounded-lg flex items-center justify-center mr-4">
+                <svg class="w-6 h-6 text-white" fill="currentColor" viewBox="0 0 24 24">
+                  <path d="M12,2A7,7 0 0,0 5,9C5,11.38 6.19,13.47 8,14.74V17A1,1 0 0,0 9,18H15A1,1 0 0,0 16,17V14.74C17.81,13.47 19,11.38 19,9A7,7 0 0,0 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,1 17,9C17,10.64 16.05,12.08 14.65,12.87L14,13.24V16H10V13.24L9.35,12.87C7.95,12.08 7,10.64 7,9A5,5 0 0,1 12,4Z"/>
+                </svg>
+              </div>
+              <h3 class="text-xl font-bold text-secondary-900">Iluminación LED</h3>
+            </div>
+            
+            <p class="text-secondary-600 mb-6">
+              Espectros lumínicos específicos para cada fase de crecimiento de las plantas.
+            </p>
+            
+            <ul class="space-y-3">
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-warning-500 rounded-full"></span>
+                <span class="text-secondary-600">LED de crecimiento</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-warning-500 rounded-full"></span>
+                <span class="text-secondary-600">Control espectral</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-warning-500 rounded-full"></span>
+                <span class="text-secondary-600">Programación lumínica</span>
+              </li>
+              <li class="flex items-center gap-3">
+                <span class="w-2 h-2 bg-warning-500 rounded-full"></span>
+                <span class="text-secondary-600">Ahorro energético</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <ContactInfo />
+  </main>
+  
+  <Footer />
+</Layout>

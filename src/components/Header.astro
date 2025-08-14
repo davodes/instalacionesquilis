@@ -1,0 +1,119 @@
+---
+const navigation = [
+  { name: 'Aire acondicionado', href: '/aire-acondicionado' },
+  { name: 'Electricidad', href: '/electricidad' },
+  { name: 'Iluminación', href: '/iluminacion' },
+  { name: 'Horticultura', href: '/horicultura-tecnica' },
+  { name: 'Blog', href: '/blog' },
+];
+---
+
+<header class="fixed w-full top-0 z-50 transition-all duration-300" id="header">
+  <div class="glass border-b border-white/10">
+    <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex justify-between items-center h-16 lg:h-20">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+          <a href="/" class="flex items-center">
+            <svg class="h-8 w-8 lg:h-10 lg:w-10 text-primary-600" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 10.16V27h2v-9.84c5.16-.42 9-4.61 9-10.16V7L12 2zM12 4.78L18.5 8 12 11.22 5.5 8 12 4.78zM4 9.28l7 3.11v7.43c-3.93-.64-7-3.47-7-7.54V9.28zm14 7.54c0 4.07-3.07 6.9-7 7.54v-7.43l7-3.11v2.83c0 .39-.01.78-.04 1.17z"/>
+            </svg>
+            <span class="ml-2 text-xl lg:text-2xl font-bold text-white">
+              Instalaciones Quilis
+            </span>
+          </a>
+        </div>
+
+        <!-- Desktop Navigation -->
+        <div class="hidden lg:block">
+          <div class="ml-10 flex items-baseline space-x-6">
+            {navigation.map((item) => (
+              <a
+                href={item.href}
+                class="text-white/90 hover:text-white hover:bg-white/10 px-3 py-2 rounded-md text-sm font-medium transition-colors duration-200"
+              >
+                {item.name}
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <!-- CTA Button -->
+        <div class="hidden lg:block">
+          <a
+            href="/contacto"
+            class="bg-accent-500 hover:bg-accent-600 text-white px-6 py-2 rounded-full text-sm font-medium transition-colors duration-200"
+          >
+            Contactar
+          </a>
+        </div>
+
+        <!-- Mobile menu button -->
+        <div class="lg:hidden">
+          <button
+            type="button"
+            class="text-white hover:text-white/80 hover:bg-white/10 p-2 rounded-md"
+            id="mobile-menu-button"
+          >
+            <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Mobile Navigation -->
+    <div class="lg:hidden hidden" id="mobile-menu">
+      <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3 border-t border-white/10">
+        {navigation.map((item) => (
+          <a
+            href={item.href}
+            class="text-white/90 hover:text-white hover:bg-white/10 block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200"
+          >
+            {item.name}
+          </a>
+        ))}
+        <a
+          href="/contacto"
+          class="bg-accent-500 hover:bg-accent-600 text-white block px-3 py-2 rounded-md text-base font-medium transition-colors duration-200 mt-4"
+        >
+          Contactar
+        </a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<script>
+  // Mobile menu toggle
+  const mobileMenuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  
+  if (mobileMenuButton && mobileMenu) {
+    mobileMenuButton.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  }
+
+  // Header transparency on scroll
+  const header = document.getElementById('header');
+  
+  if (header) {
+    let lastScrollTop = 0;
+    
+    window.addEventListener('scroll', () => {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      
+      if (scrollTop > 100) {
+        header.style.background = 'rgba(30, 64, 175, 0.95)';
+        header.style.backdropFilter = 'blur(20px)';
+      } else {
+        header.style.background = 'rgba(255, 255, 255, 0.1)';
+        header.style.backdropFilter = 'blur(10px)';
+      }
+      
+      lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+  }
+</script>

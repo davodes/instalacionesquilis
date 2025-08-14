@@ -1,0 +1,294 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+---
+
+<Layout 
+  title="Contacto - Instalaciones Quilis | Presupuesto Gratuito"
+  description="Contacta con Instalaciones Quilis para tu proyecto. Presupuesto gratuito y sin compromiso. Teléfono: 916 474 896. Servicio en Madrid."
+>
+  <Header />
+  
+  <main class="pt-20">
+    <!-- Hero Section -->
+    <section class="py-16 lg:py-24 bg-gradient-to-r from-primary-900 via-primary-800 to-primary-700">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        <h1 class="text-4xl lg:text-6xl font-bold text-white mb-6">
+          Contacto
+        </h1>
+        <p class="text-xl text-primary-100 max-w-3xl mx-auto">
+          Estamos aquí para ayudarte con tu proyecto. Contacta con nosotros para un presupuesto personalizado y sin compromiso.
+        </p>
+      </div>
+    </section>
+    
+    <!-- Contact Information & Form -->
+    <section class="py-16 lg:py-24 bg-white">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+          <!-- Contact Info -->
+          <div>
+            <h2 class="text-3xl font-bold text-secondary-900 mb-8">
+              Información de contacto
+            </h2>
+            
+            <div class="space-y-6">
+              <!-- Phone -->
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-primary-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-primary-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-secondary-900 mb-1">Teléfono</h3>
+                  <p class="text-secondary-600 mb-2">Llámanos para consultas inmediatas</p>
+                  <a href="tel:+34916474896" class="text-primary-600 hover:text-primary-700 font-semibold text-lg">
+                    916 474 896
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Email -->
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-accent-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-accent-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                    <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-secondary-900 mb-1">Email</h3>
+                  <p class="text-secondary-600 mb-2">Escríbenos tus consultas</p>
+                  <a href="mailto:info@instalacionesquilis.com" class="text-primary-600 hover:text-primary-700 font-semibold">
+                    info@instalacionesquilis.com
+                  </a>
+                </div>
+              </div>
+              
+              <!-- Location -->
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-success-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-success-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-secondary-900 mb-1">Ubicación</h3>
+                  <p class="text-secondary-600 mb-2">Servimos toda la Comunidad de Madrid</p>
+                  <p class="text-secondary-800 font-medium">Madrid, España</p>
+                </div>
+              </div>
+              
+              <!-- Schedule -->
+              <div class="flex items-start gap-4">
+                <div class="w-12 h-12 bg-warning-100 rounded-lg flex items-center justify-center flex-shrink-0">
+                  <svg class="w-6 h-6 text-warning-600" fill="currentColor" viewBox="0 0 20 20">
+                    <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm1-12a1 1 0 10-2 0v4a1 1 0 00.293.707l2.828 2.829a1 1 0 101.415-1.415L11 9.586V6z" clip-rule="evenodd"/>
+                  </svg>
+                </div>
+                <div>
+                  <h3 class="font-semibold text-secondary-900 mb-1">Horario</h3>
+                  <p class="text-secondary-600 mb-2">Estamos disponibles</p>
+                  <div class="text-secondary-800">
+                    <p class="font-medium">Lunes - Viernes: 8:00 - 19:00</p>
+                    <p class="text-sm text-secondary-600 mt-1">Urgencias 24/7</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Emergency Banner -->
+            <div class="mt-8 bg-error-50 border border-error-200 rounded-xl p-6">
+              <div class="flex items-center gap-3 mb-3">
+                <svg class="w-6 h-6 text-error-600 flex-shrink-0" fill="currentColor" viewBox="0 0 20 20">
+                  <path fill-rule="evenodd" d="M8.257 3.099c.765-1.36 2.722-1.36 3.486 0l5.58 9.92c.75 1.334-.213 2.98-1.742 2.98H4.42c-1.53 0-2.493-1.646-1.743-2.98l5.58-9.92zM11 13a1 1 0 11-2 0 1 1 0 012 0zm-1-8a1 1 0 00-1 1v3a1 1 0 002 0V6a1 1 0 00-1-1z" clip-rule="evenodd"/>
+                </svg>
+                <h4 class="font-bold text-error-900">Servicio de Urgencias 24/7</h4>
+              </div>
+              <p class="text-error-700 mb-3">
+                Para averías urgentes que no pueden esperar, estamos disponibles las 24 horas del día.
+              </p>
+              <a 
+                href="tel:+34916474896" 
+                class="bg-error-600 hover:bg-error-700 text-white px-6 py-2 rounded-lg font-semibold transition-colors inline-flex items-center gap-2"
+              >
+                <svg class="w-4 h-4" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"/>
+                </svg>
+                Llamar urgencias
+              </a>
+            </div>
+          </div>
+          
+          <!-- Contact Form -->
+          <div class="bg-secondary-50 rounded-2xl p-8">
+            <h2 class="text-2xl font-bold text-secondary-900 mb-6">
+              Solicita tu presupuesto
+            </h2>
+            <p class="text-secondary-600 mb-8">
+              Completa el formulario y nos pondremos en contacto contigo lo antes posible.
+            </p>
+            
+            <form class="space-y-6" action="https://formspree.io/f/your-form-id" method="POST">
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="name" class="block text-sm font-medium text-secondary-700 mb-2">
+                    Nombre *
+                  </label>
+                  <input
+                    type="text"
+                    id="name"
+                    name="name"
+                    required
+                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="Tu nombre completo"
+                  />
+                </div>
+                <div>
+                  <label for="phone" class="block text-sm font-medium text-secondary-700 mb-2">
+                    Teléfono *
+                  </label>
+                  <input
+                    type="tel"
+                    id="phone"
+                    name="phone"
+                    required
+                    class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                    placeholder="Tu teléfono"
+                  />
+                </div>
+              </div>
+              
+              <div>
+                <label for="email" class="block text-sm font-medium text-secondary-700 mb-2">
+                  Email *
+                </label>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                  placeholder="tu@email.com"
+                />
+              </div>
+              
+              <div>
+                <label for="service" class="block text-sm font-medium text-secondary-700 mb-2">
+                  Servicio de interés *
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  required
+                  class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                >
+                  <option value="">Selecciona un servicio</option>
+                  <option value="aire-acondicionado">Aire Acondicionado</option>
+                  <option value="electricidad">Electricidad</option>
+                  <option value="iluminacion">Iluminación</option>
+                  <option value="horicultura-tecnica">Horticultura Técnica</option>
+                  <option value="mantenimiento">Mantenimiento</option>
+                  <option value="otros">Otros</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="project-type" class="block text-sm font-medium text-secondary-700 mb-2">
+                  Tipo de proyecto
+                </label>
+                <select
+                  id="project-type"
+                  name="project-type"
+                  class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors"
+                >
+                  <option value="">Selecciona el tipo</option>
+                  <option value="residencial">Residencial</option>
+                  <option value="comercial">Comercial</option>
+                  <option value="industrial">Industrial</option>
+                  <option value="reforma">Reforma</option>
+                  <option value="nueva-instalacion">Nueva instalación</option>
+                </select>
+              </div>
+              
+              <div>
+                <label for="message" class="block text-sm font-medium text-secondary-700 mb-2">
+                  Descripción del proyecto *
+                </label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows="5"
+                  required
+                  class="w-full px-4 py-3 border border-secondary-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-500 focus:border-transparent transition-colors resize-none"
+                  placeholder="Cuéntanos los detalles de tu proyecto, ubicación, dimensiones, necesidades específicas..."
+                ></textarea>
+              </div>
+              
+              <div class="flex items-start gap-3">
+                <input
+                  type="checkbox"
+                  id="privacy"
+                  name="privacy"
+                  required
+                  class="mt-1 h-4 w-4 text-primary-600 focus:ring-primary-500 border-secondary-300 rounded"
+                />
+                <label for="privacy" class="text-sm text-secondary-600">
+                  Acepto la <a href="/politica-privacidad" class="text-primary-600 hover:text-primary-700 underline">política de privacidad</a> y autorizo el tratamiento de mis datos para responder a mi consulta. *
+                </label>
+              </div>
+              
+              <button
+                type="submit"
+                class="w-full bg-primary-600 hover:bg-primary-700 text-white px-6 py-4 rounded-lg font-semibold transition-colors duration-200 flex items-center justify-center gap-2"
+              >
+                <svg class="w-5 h-5" fill="currentColor" viewBox="0 0 20 20">
+                  <path d="M2.003 5.884L10 9.882l7.997-3.998A2 2 0 0016 4H4a2 2 0 00-1.997 1.884z"/>
+                  <path d="M18 8.118l-8 4-8-4V14a2 2 0 002 2h12a2 2 0 002-2V8.118z"/>
+                </svg>
+                Enviar solicitud
+              </button>
+              
+              <p class="text-xs text-secondary-500 text-center">
+                Te responderemos en menos de 24 horas
+              </p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Map Section -->
+    <section class="py-16 bg-secondary-50">
+      <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div class="text-center mb-12">
+          <h2 class="text-3xl font-bold text-secondary-900 mb-4">
+            Nuestra zona de servicio
+          </h2>
+          <p class="text-xl text-secondary-600">
+            Atendemos toda la Comunidad de Madrid con la máxima rapidez
+          </p>
+        </div>
+        
+        <div class="bg-white rounded-2xl shadow-lg overflow-hidden">
+          <div class="aspect-w-16 aspect-h-9">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d387190.2799160891!2d-3.9244612089869074!3d40.41679726496618!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd422997800a3c81%3A0xc436dec1618c2269!2sMadrid!5e0!3m2!1ses!2ses!4v1694601234567!5m2!1ses!2ses"
+              width="100%"
+              height="450"
+              style="border:0;"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              title="Mapa de Madrid - Zona de servicio de Instalaciones Quilis"
+            ></iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <Footer />
+</Layout>

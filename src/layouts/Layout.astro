@@ -1,0 +1,134 @@
+---
+export interface Props {
+  title: string;
+  description?: string;
+  image?: string;
+  canonical?: string;
+}
+
+const { 
+  title, 
+  description = "Instalaciones Quilis - Especialistas en climatización, electricidad, iluminación y horticultura técnica. Servicio profesional en Madrid desde 1985.",
+  image = "/images/og-image.jpg",
+  canonical
+} = Astro.props;
+
+const url = new URL(Astro.url.pathname, Astro.site);
+---
+
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>{title}</title>
+    <meta name="title" content={title} />
+    <meta name="description" content={description} />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href={canonical || url} />
+    
+    <!-- Open Graph -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content={url} />
+    <meta property="og:title" content={title} />
+    <meta property="og:description" content={description} />
+    <meta property="og:image" content={new URL(image, Astro.site)} />
+    <meta property="og:site_name" content="Instalaciones Quilis" />
+    <meta property="og:locale" content="es_ES" />
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:url" content={url} />
+    <meta name="twitter:title" content={title} />
+    <meta name="twitter:description" content={description} />
+    <meta name="twitter:image" content={new URL(image, Astro.site)} />
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/x-icon" href="/favicon.ico" />
+    
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link 
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" 
+      rel="stylesheet"
+    />
+    
+    <!-- Schema Markup -->
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Instalaciones Quilis",
+        "description": "Empresa especializada en instalaciones de climatización, electricidad, iluminación y horticultura técnica",
+        "url": "https://instalacionesquilis.com",
+        "telephone": "+34916474896",
+        "email": "info@instalacionesquilis.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Calle Ejemplo 123",
+          "addressLocality": "Madrid",
+          "addressRegion": "Madrid",
+          "postalCode": "28001",
+          "addressCountry": "ES"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": "40.4168",
+          "longitude": "-3.7038"
+        },
+        "openingHours": "Mo-Fr 08:00-19:00",
+        "foundingDate": "1985",
+        "priceRange": "€€",
+        "serviceArea": {
+          "@type": "City",
+          "name": "Madrid"
+        },
+        "services": [
+          "Aire acondicionado",
+          "Instalaciones eléctricas",
+          "Iluminación",
+          "Horticultura técnica"
+        ]
+      }
+    </script>
+  </head>
+  <body class="bg-white text-secondary-900 font-sans">
+    <slot />
+    
+    <!-- Analytics placeholder -->
+    <script>
+      // Vercel Analytics will be injected here automatically
+    </script>
+  </body>
+</html>
+
+<style is:global>
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    line-height: 1.6;
+  }
+  
+  /* Glass morphism utility classes */
+  .glass {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+  
+  .glass-dark {
+    background: rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+</style>
